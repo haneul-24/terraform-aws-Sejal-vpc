@@ -10,7 +10,7 @@ module "VPC" {
   vpc_config = {
     cidr_block = "10.0.0.0/16"
     name = "test-module-vpc"
-  }
+  } 
   
   subnet_config = {
     public_subnet1 = {
