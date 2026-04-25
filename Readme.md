@@ -19,28 +19,6 @@ This module provides a dynamic and scalable way to deploy a VPC with multiple su
   * Associates public subnets with the route table
 ---
 
-## Project Structure
-
-The project is organized into a root module and a child module located in the `module/vpc` directory:
-
-```text
-terraform-own-module-vpc/
-├── module/               # Core Logic (The Product)
-│   └── vpc/
-│       ├── main.tf
-│       ├── variables.tf
-│       ├── outputs.tf
-│       └── version.tf
-├── examples/             # The Showcase (How to use the product)
-│   └── complete/
-│       ├── main.tf       # Call module from this file  (source = "../../module/vpc")
-│       ├── output.tf     # Root outputs for the example
-│       └── README.md     # Specific documentation for this example
-├── root-main.tf          # Your current test file
-├── outputs.tf            # Your current root outputs
-└── README.md             # Main Project Documentation
-```
-
 ## Usage
 
 ```
